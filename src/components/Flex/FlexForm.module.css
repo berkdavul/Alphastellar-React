@@ -1,0 +1,114 @@
+.formItems {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: calc(60vw - 25px);
+}
+
+.formItems input {
+  padding: 20px;
+  margin-bottom: 18px;
+  color: #000;
+  text-align: center;
+  border: 3px solid black;
+}
+.formItems input::placeholder {
+  color: #000;
+}
+.formTitle {
+  padding: 10px;
+  margin-bottom: 18px;
+  background-color: rgb(90, 90, 249);
+  color: #fff;
+}
+.btn {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+
+.disBut > button {
+  border: 4px solid black;
+  color: #000;
+  cursor: pointer;
+  background-color: #2ccddc;
+  width: 50%;
+  box-sizing: border-box;
+  box-shadow: 0 5px #666;
+  padding: 15px;
+}
+.disBut > button:first-child {
+  text-align: right;
+  font-size: 18px;
+  border-right: none;
+
+}
+.disBut > button:nth-child(2) {
+  text-align: left;
+  font-size: 18px;
+  border-left: none;
+}
+
+.disBut > div:active {
+  opacity: 0.8;
+  box-shadow: 0 5px #666;
+}
+
+.btn button:disabled {
+  cursor: default;
+  color: black;
+  opacity: 0.5;
+
+}
+@media (max-width: 390px) {
+  .formItems {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    min-width: 200px;
+  }
+  .formItems input {
+    min-width: 80vw;
+  }
+  .disBut > button:nth-child(2) {
+    display: none;
+  }
+  .disBut > button:first-child {
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+    text-align: center;
+  }
+}
+@media (min-width: 390px) and (max-width: 700px) {
+  .formItems {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formItems input {
+    min-width: 80vw;
+    min-height: 10vh;
+    margin-bottom: 30px;
+  }
+  .formTitle {
+    min-width: 80vw;
+    min-height: 60px;
+    padding: 20px;
+  }
+
+  .disBut > button:nth-child(2) {
+    display: none;
+  }
+  .disBut > button:first-child {
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    border: 4px solid black;
+    text-align: center;
+  }
+}

@@ -1,0 +1,76 @@
+.menuItem {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.menuItem > div {
+  padding: 5px;
+  background-color: purple;
+  border: solid black;
+  border-width: 1px 2px 1px 2px;
+  color: #fff;
+}
+.menuItem > div:first-child {
+  border-top: 2px solid black;
+}
+.menuItem > div:last-child {
+  border-bottom: 2px solid black;
+}
+.menuItem > div:first-child:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(2):hover {
+  background-color: green;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(3):hover {
+  background-color: red;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(4):hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(5):hover {
+  background-color: paleturquoise;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(6):hover {
+  background-color: chocolate;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(7):hover {
+  background-color: pink;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(8):hover {
+  background-color: brown;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(9):hover {
+  background-color: violet;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(10):hover {
+  background-color: gray;
+  cursor: pointer;
+}
+.menuItem > div:nth-child(11):hover {
+  background-color: salmon;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .menuItem {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 950px) and (min-height: 800px) and (max-height: 1400px) {
+  .menuItem > div
+  {
+    padding: 10px;
+  }
+}
